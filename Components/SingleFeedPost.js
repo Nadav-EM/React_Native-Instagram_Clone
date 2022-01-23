@@ -79,7 +79,6 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   userFeed: {
-    flex: 1,
     backgroundColor: "black",
   },
   userPhoto: {

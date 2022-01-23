@@ -32,8 +32,7 @@ const styles = StyleSheet.create({
     height: 70,
     backgroundColor: "black",
     justifyContent: "center",
-    marginTop: 0
-    ,
+    marginTop: 0,
   },
   inner: {
     flexDirection: "row",

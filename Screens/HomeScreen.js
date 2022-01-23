@@ -3,10 +3,12 @@ import React from "react";
 import ProfilePicture from "../Components/ProfilePicture";
 import Feed from "../Components/Feed";
 import Users from "../userDate";
+import Navbar from "../Components/Navbar";
 
 const HomeScreen = () => {
   return (
-    <View>
+    <View style={styles.homeScreen}>
+      <Navbar />
       <ProfilePicture list={Users} />
       <Feed list={Users} />
     </View>
@@ -15,4 +17,8 @@ const HomeScreen = () => {
 
 export default HomeScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  homeScreen: {
+    flex: 1,
+  },
+});
