@@ -22,9 +22,7 @@ const ProfilePicture = ({ list }) => {
               style={styles.gradient}
             >
               <TouchableOpacity
-                onPress={() =>
-                  navigation.navigate("StoryScren", { storyPhotos: list.item.storyPhotos })
-                }
+                onPress={() => navigation.navigate("StoryScren", { data: list.item })}
                 activeOpacity={0.9}
               >
                 <Image style={styles.imageContaier} source={{ uri: list.item.uri }} />

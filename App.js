@@ -102,7 +102,7 @@ export default function App() {
 const styles = StyleSheet.create({
   gradient: {
     width: "100%",
-    height: 26,
+    height: 28,
     color: "white",
   },
   imgContainer: {
