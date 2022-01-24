@@ -1,4 +1,4 @@
-import { SET_LIKE, SET_IS_LIKED } from "../Redux/actions";
+import { SET_LIKE } from "../Redux/actions";
 import Users from "../userDate";
 
 const init = {

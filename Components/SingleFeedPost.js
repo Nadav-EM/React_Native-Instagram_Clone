@@ -1,5 +1,5 @@
-import { StyleSheet, TouchableOpacity, Text, View, Image, Dimensions } from "react-native";
 import React from "react";
+import { StyleSheet, TouchableOpacity, Text, View, Image, Dimensions } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
