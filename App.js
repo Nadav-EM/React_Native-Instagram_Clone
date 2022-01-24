@@ -5,6 +5,7 @@ import Users from "./userDate";
 
 //Components
 import HomeScreen from "./Screens/HomeScreen";
+import Main from "./Screens/Main";
 import Messages from "./Screens/Messages";
 import Videos from "./Screens/VIdeos";
 import Shop from "./Screens/Shop";
@@ -51,8 +52,8 @@ export default function App() {
                 <Entypo style={{ marginLeft: 25 }} name="home" size={24} color="white" />
               ),
             }}
-            name="HomeScreen"
-            component={HomeScreen}
+            name="Main"
+            component={Main}
           />
           <Tab.Screen
             options={{

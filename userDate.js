@@ -10,6 +10,17 @@ const Users = [
     description: "Hello World!",
     time: "3 minutes ago",
     isLiked: false,
+    storyPhotos: [
+      {
+        story:
+          "https://images.pexels.com/photos/8587994/pexels-photo-8587994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      },
+      { story: "https://cdn.pixabay.com/photo/2021/12/23/13/25/flower-6889331_960_720.jpg" },
+      {
+        story:
+          "https://images.pexels.com/photos/3687749/pexels-photo-3687749.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      },
+    ],
   },
   {
     id: 2,
@@ -22,6 +33,20 @@ const Users = [
     description: "Corona Time",
     time: "9 hours ago",
     isLiked: false,
+    storyPhotos: [
+      {
+        story:
+          "https://images.pexels.com/photos/9475808/pexels-photo-9475808.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/7949446/pexels-photo-7949446.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/10096083/pexels-photo-10096083.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+    ],
   },
   {
     id: 3,
@@ -34,6 +59,20 @@ const Users = [
     description: "Hello World!",
     time: "1 hour ago",
     isLiked: false,
+    storyPhotos: [
+      {
+        story:
+          "https://images.pexels.com/photos/10533140/pexels-photo-10533140.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/7959153/pexels-photo-7959153.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/10399167/pexels-photo-10399167.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+    ],
   },
   {
     id: 4,
@@ -46,6 +85,20 @@ const Users = [
     description: "New Beginings..",
     time: "2 min ago",
     isLiked: false,
+    storyPhotos: [
+      {
+        story:
+          "https://images.pexels.com/photos/10533140/pexels-photo-10533140.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/7959153/pexels-photo-7959153.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/10399167/pexels-photo-10399167.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+    ],
   },
   {
     id: 5,
@@ -57,6 +110,20 @@ const Users = [
     likes: 122,
     description: "few seconds ago",
     isLiked: false,
+    storyPhotos: [
+      {
+        story:
+          "https://images.pexels.com/photos/10533140/pexels-photo-10533140.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/7959153/pexels-photo-7959153.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/10399167/pexels-photo-10399167.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+    ],
   },
   {
     id: 6,
@@ -68,6 +135,20 @@ const Users = [
     likes: 12,
     description: "20 minutes ago",
     isLiked: false,
+    storyPhotos: [
+      {
+        story:
+          "https://images.pexels.com/photos/10533140/pexels-photo-10533140.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/7959153/pexels-photo-7959153.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/10399167/pexels-photo-10399167.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+    ],
   },
   {
     id: 7,
@@ -79,6 +160,20 @@ const Users = [
     likes: 21,
     description: "few seconds ago",
     isLiked: false,
+    storyPhotos: [
+      {
+        story:
+          "https://images.pexels.com/photos/10533140/pexels-photo-10533140.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/7959153/pexels-photo-7959153.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/10399167/pexels-photo-10399167.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+    ],
   },
   {
     id: 8,
@@ -90,6 +185,20 @@ const Users = [
     likes: 3,
     description: "28 minutes ago",
     isLiked: false,
+    storyPhotos: [
+      {
+        story:
+          "https://images.pexels.com/photos/10533140/pexels-photo-10533140.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/7959153/pexels-photo-7959153.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/10399167/pexels-photo-10399167.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+    ],
   },
   {
     id: 9,
@@ -101,6 +210,20 @@ const Users = [
     likes: 49,
     description: "1 day agp",
     isLiked: false,
+    storyPhotos: [
+      {
+        story:
+          "https://images.pexels.com/photos/10533140/pexels-photo-10533140.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/7959153/pexels-photo-7959153.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/10399167/pexels-photo-10399167.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+    ],
   },
   {
     id: 10,
@@ -112,6 +235,20 @@ const Users = [
     likes: 78,
     description: "2 days ago",
     isLiked: false,
+    storyPhotos: [
+      {
+        story:
+          "https://images.pexels.com/photos/10533140/pexels-photo-10533140.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/7959153/pexels-photo-7959153.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        story:
+          "https://images.pexels.com/photos/10399167/pexels-photo-10399167.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+    ],
   },
 ];
 
