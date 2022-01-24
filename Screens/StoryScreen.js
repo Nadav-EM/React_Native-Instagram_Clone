@@ -14,15 +14,16 @@ const screenWidth = Dimensions.get("window").width;
 const screenHeight = Dimensions.get("window").height;
 
 const StoryScreen = ({ route }) => {
+  //
   const navigation = useNavigation();
   //console.log(route.params.data.storyPhotos);
-  console.log();
+
   return (
     <View style={styles.main}>
       <FlatList
         keyExtractor={(item) => item.story}
         data={route.params.data.storyPhotos}
-        renderItem={(item) => (
+        renderItem={(item, index) => (
           <View>
             <View style={styles.userContainer}>
               <TouchableOpacity

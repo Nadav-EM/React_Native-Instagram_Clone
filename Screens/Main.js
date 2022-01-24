@@ -2,6 +2,8 @@ import { StyleSheet } from "react-native";
 import React from "react";
 import HomeScreen from "./HomeScreen";
 import StoryScren from "./StoryScreen";
+import Map from "./MapScreen";
+
 import { createStackNavigator } from "@react-navigation/stack";
 
 const Stack = createStackNavigator();
@@ -23,6 +25,14 @@ const Main = () => {
         }}
         name="StoryScren"
         component={StoryScren}
+      />
+      <Stack.Screen
+        options={{
+          title: "Map",
+          headerShown: false,
+        }}
+        name="Map"
+        component={Map}
       />
     </Stack.Navigator>
   );

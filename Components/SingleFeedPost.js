@@ -5,7 +5,7 @@ import { Feather } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 import DoubleClick from "react-native-double-click-instagram";
-
+import { useNavigation } from "@react-navigation/native";
 //Redux
 import { useDispatch } from "react-redux";
 import { setLike } from "../Redux/actions";
@@ -13,10 +13,12 @@ import { setLike } from "../Redux/actions";
 const windowWidth = Dimensions.get("screen").width;
 
 const SingleFeedPost = ({ item }) => {
+  //dispatch
   const dispatch = useDispatch();
   const handleLikeClicked = () => {
     dispatch(setLike(item.item.id));
   };
+  const navigation = useNavigation();
 
   return (
     <View style={styles.userFeed}>
@@ -35,7 +37,11 @@ const SingleFeedPost = ({ item }) => {
                 >
                   {item.item.name}
                 </Text>
-                <Text style={{ color: "white" }}>{item.item.location}</Text>
+                <TouchableOpacity
+                  onPress={() => navigation.navigate("Map", { city: item.item.location })}
+                >
+                  <Text style={{ color: "white" }}>{item.item.location}</Text>
+                </TouchableOpacity>
               </View>
             </View>
             <View style={styles.ABC}>

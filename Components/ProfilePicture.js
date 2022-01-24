@@ -2,6 +2,7 @@ import { StyleSheet, View, Text, Image, FlatList, TouchableOpacity } from "react
 import * as React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { useNavigation } from "@react-navigation/native";
+import timeout from "../Timeout";
 
 const ProfilePicture = ({ list }) => {
   const navigation = useNavigation();
@@ -12,8 +13,11 @@ const ProfilePicture = ({ list }) => {
         horizontal={true}
         showsHorizontalScrollIndicator={false}
         data={list}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => {
+          return item.id;
+        }}
         renderItem={(list) => (
+       
           <View style={styles.storyContainer}>
             <LinearGradient
               colors={["#CA1D7E", "#E35157", "#F2703F"]}
