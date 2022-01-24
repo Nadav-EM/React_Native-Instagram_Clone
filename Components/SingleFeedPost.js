@@ -3,6 +3,7 @@ import { StyleSheet, TouchableOpacity, Text, View, Image, Dimensions } from "rea
 import { Ionicons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
 import DoubleClick from "react-native-double-click-instagram";
 
 //Redux
@@ -20,21 +21,26 @@ const SingleFeedPost = ({ item }) => {
   return (
     <View style={styles.userFeed}>
       <View style={styles.postNav}>
-        <View style={styles.imageAndInfoContainer}>
-          <View style={styles.justImage}>
-            <Image style={styles.postNavUserPic} source={{ uri: item.item.uri }} />
-          </View>
-          <View style={styles.justLocation}>
-            <Text
-              style={{
-                fontWeight: "bold",
-                margin: 0,
-                color: "white",
-              }}
-            >
-              {item.item.name}
-            </Text>
-            <Text style={{ color: "white" }}>{item.item.location}</Text>
+        <View>
+          <View style={styles.imageAndInfoContainer}>
+            <View style={styles.justImage}>
+              <Image style={styles.postNavUserPic} source={{ uri: item.item.uri }} />
+              <View style={styles.justLocation}>
+                <Text
+                  style={{
+                    fontWeight: "bold",
+                    margin: 0,
+                    color: "white",
+                  }}
+                >
+                  {item.item.name}
+                </Text>
+                <Text style={{ color: "white" }}>{item.item.location}</Text>
+              </View>
+            </View>
+            <View style={styles.ABC}>
+              <Entypo name="dots-three-vertical" size={20} color="white" />
+            </View>
           </View>
         </View>
       </View>
@@ -106,10 +112,13 @@ const styles = StyleSheet.create({
     borderRadius: 50,
   },
   imageAndInfoContainer: {
+    justifyContent: "space-between",
+    width: windowWidth,
     flexDirection: "row",
     marginLeft: 3,
   },
   justImage: {
+    flexDirection: "row",
     justifyContent: "flex-end",
   },
   justLocation: {
@@ -127,5 +136,10 @@ const styles = StyleSheet.create({
   poster: {
     width: "100%",
     flexDirection: "row",
+  },
+  ABC: {
+    justifyContent: "center",
+    marginTop: 7,
+    marginRight: 3,
   },
 });

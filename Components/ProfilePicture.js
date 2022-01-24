@@ -1,8 +1,16 @@
 import { StyleSheet, View, Text, Image, FlatList, TouchableOpacity } from "react-native";
 import * as React from "react";
 import { LinearGradient } from "expo-linear-gradient";
+import {useNavigation} from "@react-navigation/native"
 
 const ProfilePicture = ({ list }) => {
+
+
+  const navigation = useNavigation();
+  const showStory = () => {
+    navigation.navigate("story");
+  }
+
   return (
     <View style={styles.Container}>
       <FlatList
@@ -18,7 +26,10 @@ const ProfilePicture = ({ list }) => {
               end={{ x: 1.0, y: 1.0 }}
               style={styles.gradient}
             >
-              <TouchableOpacity activeOpacity={0.9}>
+              <TouchableOpacity
+                onPress={() => alert(`Hello ${list.item.name}`)}
+                activeOpacity={0.9}
+              >
                 <Image style={styles.imageContaier} source={{ uri: list.item.uri }} />
               </TouchableOpacity>
             </LinearGradient>
