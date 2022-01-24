@@ -1,16 +1,17 @@
 import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import React, { useEffect } from "react";
 import ProfilePicture from "../Components/ProfilePicture";
 import Feed from "../Components/Feed";
-import Users from "../userDate";
 import Navbar from "../Components/Navbar";
+import { useSelector } from "react-redux";
 
 const HomeScreen = () => {
+  const { users } = useSelector((state) => state.userReducer);
   return (
     <View style={styles.homeScreen}>
       <Navbar />
-      <ProfilePicture list={Users} />
-      <Feed list={Users} />
+      <ProfilePicture list={users} />
+      <Feed list={users} />
     </View>
   );
 };

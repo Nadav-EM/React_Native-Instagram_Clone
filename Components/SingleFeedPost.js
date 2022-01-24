@@ -1,19 +1,20 @@
 import { StyleSheet, TouchableOpacity, Text, View, Image, Dimensions } from "react-native";
-import React, { useState } from "react";
+import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import DoubleClick from "react-native-double-click-instagram";
 
+//Redux
+import { useDispatch } from "react-redux";
+import { setLike } from "../Redux/actions";
+
 const windowWidth = Dimensions.get("screen").width;
 
 const SingleFeedPost = ({ item }) => {
-  const [like, setLike] = useState(item.item.likes);
-  const [isLiked, setIsLiked] = useState(false);
-
+  const dispatch = useDispatch();
   const handleLikeClicked = () => {
-    isLiked ? setLike((prev) => prev - 1) : setLike((prev) => prev + 1);
-    setIsLiked((prev) => !prev);
+    dispatch(setLike(item.item.id));
   };
 
   return (
@@ -47,7 +48,11 @@ const SingleFeedPost = ({ item }) => {
       <View>
         <View style={styles.icons}>
           <TouchableOpacity activeOpacity={0.7} onPress={handleLikeClicked}>
-            <AntDesign style={{ color: isLiked ? "red" : "white" }} name="heart" size={24} />
+            <AntDesign
+              style={{ color: item.item.isLiked ? "red" : "white" }}
+              name="heart"
+              size={24}
+            />
           </TouchableOpacity>
           <TouchableOpacity activeOpacity={0.2}>
             <Ionicons name="md-chatbubble-outline" size={24} color="white" />
@@ -57,7 +62,7 @@ const SingleFeedPost = ({ item }) => {
           </TouchableOpacity>
         </View>
         <View style={{ paddingLeft: 5, marginBottom: 5, marginTop: 10 }}>
-          <Text style={{ fontWeight: "bold", color: "white" }}>{`${like} likes`}</Text>
+          <Text style={{ fontWeight: "bold", color: "white" }}>{`${item.item.likes} likes`}</Text>
           <View style={styles.poster}>
             <Text style={{ paddingRight: 5, fontWeight: "bold", color: "white" }}>
               {item.item.name}

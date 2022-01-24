@@ -9,6 +9,7 @@ const Users = [
     likes: 5,
     description: "Hello World!",
     time: "3 minutes ago",
+    isLiked: false,
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const Users = [
     likes: 18,
     description: "Corona Time",
     time: "9 hours ago",
+    isLiked: false,
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const Users = [
     likes: 3,
     description: "Hello World!",
     time: "1 hour ago",
+    isLiked: false,
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ const Users = [
     likes: 429,
     description: "New Beginings..",
     time: "2 min ago",
+    isLiked: false,
   },
   {
     id: 5,
@@ -52,6 +56,7 @@ const Users = [
       "https://images.unsplash.com/photo-1547057740-4b18aac8eed2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     likes: 122,
     description: "few seconds ago",
+    isLiked: false,
   },
   {
     id: 6,
@@ -62,6 +67,7 @@ const Users = [
       "https://images.pexels.com/photos/4750385/pexels-photo-4750385.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     likes: 12,
     description: "20 minutes ago",
+    isLiked: false,
   },
   {
     id: 7,
@@ -72,6 +78,7 @@ const Users = [
       "https://images.pexels.com/photos/9821844/pexels-photo-9821844.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     likes: 21,
     description: "few seconds ago",
+    isLiked: false,
   },
   {
     id: 8,
@@ -82,6 +89,7 @@ const Users = [
       "https://images.pexels.com/photos/6061406/pexels-photo-6061406.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     likes: 3,
     description: "28 minutes ago",
+    isLiked: false,
   },
   {
     id: 9,
@@ -92,6 +100,7 @@ const Users = [
       "https://images.pexels.com/photos/10617531/pexels-photo-10617531.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     likes: 49,
     description: "1 day agp",
+    isLiked: false,
   },
   {
     id: 10,
@@ -102,6 +111,7 @@ const Users = [
       "https://images.unsplash.com/photo-1547057740-4b18aac8eed2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     likes: 78,
     description: "2 days ago",
+    isLiked: false,
   },
 ];
 
