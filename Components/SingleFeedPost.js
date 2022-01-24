@@ -53,21 +53,26 @@ const SingleFeedPost = ({ item }) => {
       </View>
       <View>
         <View style={styles.icons}>
-          <TouchableOpacity activeOpacity={0.7} onPress={handleLikeClicked}>
-            <AntDesign
-              style={{ color: item.item.isLiked ? "red" : "white" }}
-              name="heart"
-              size={24}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity activeOpacity={0.2}>
-            <Ionicons name="md-chatbubble-outline" size={24} color="white" />
-          </TouchableOpacity>
-          <TouchableOpacity activeOpacity={0.2}>
-            <Feather name="send" size={24} color="white" />
-          </TouchableOpacity>
+          <View style={styles.firstThree}>
+            <TouchableOpacity activeOpacity={0.7} onPress={handleLikeClicked}>
+              <AntDesign
+                style={{ color: item.item.isLiked ? "red" : "white" }}
+                name="heart"
+                size={24}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity style={{ marginLeft: 10 }} activeOpacity={0.2}>
+              <Ionicons name="md-chatbubble-outline" size={24} color="white" />
+            </TouchableOpacity>
+            <TouchableOpacity style={{ marginLeft: 10 }} activeOpacity={0.2}>
+              <Feather name="send" size={24} color="white" />
+            </TouchableOpacity>
+          </View>
+          <View>
+            <Feather name="bookmark" size={24} color="white" />
+          </View>
         </View>
-        <View style={{ paddingLeft: 5, marginBottom: 5, marginTop: 10 }}>
+        <View style={{ paddingLeft: 7, marginBottom: 5, marginTop: 10 }}>
           <Text style={{ fontWeight: "bold", color: "white" }}>{`${item.item.likes} likes`}</Text>
           <View style={styles.poster}>
             <Text style={{ paddingRight: 5, fontWeight: "bold", color: "white" }}>
@@ -128,18 +133,25 @@ const styles = StyleSheet.create({
     marginLeft: 7.5,
   },
   icons: {
-    width: "30%",
+    marginTop: 3,
+    marginLeft: 5,
+    width: windowWidth,
     flexDirection: "row",
-    justifyContent: "space-around",
     paddingTop: 5,
   },
   poster: {
     width: "100%",
     flexDirection: "row",
   },
+
   ABC: {
     justifyContent: "center",
-    marginTop: 7,
-    marginRight: 3,
+    marginTop: 10,
+    marginRight: 5,
+  },
+
+  firstThree: {
+    flexDirection: "row",
+    width: "92%",
   },
 });
